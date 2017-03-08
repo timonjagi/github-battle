@@ -5,7 +5,7 @@ var transparentBg = require('../styles').transparentBg;
 function Prompt(props){
 	return (
 		<div className="jumbotron col-sm-6 col-sm-offset-3 text center" style={transparentBg}>				
-				<h1>{props.header}</h1>
+				<h1 className="text-center">{props.header}</h1>
 				<div className="col-sm-12">
 					<form onSubmit={props.onSubmitUser}>
 						<div className="form-group">
