@@ -1,10 +1,11 @@
 var React = require('react');
 var PropTypes = React.PropTypes;
 var transparentBg = require('../styles').transparentBg;
+var MainComponent = require('./maincomponent');
 
 function Prompt(props){
 	return (
-		<div className="jumbotron col-sm-6 col-sm-offset-3 text center" style={transparentBg}>				
+			<MainComponent>			
 				<h1 className="text-center">{props.header}</h1>
 				<div className="col-sm-12">
 					<form onSubmit={props.onSubmitUser}>
@@ -23,7 +24,7 @@ function Prompt(props){
 						</div>
 					</form>
 				</div>
-			</div>
+			</MainComponent>
 	)
 }
 
